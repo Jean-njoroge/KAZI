@@ -25,10 +25,10 @@ class Pipeline:
 
     Example:
         pipeline = Pipeline(
-            name="patent-audit",
+            name="weekly-brief",
             stages=[ScoutAgent(), ScoreAgent(), CompileAgent()]
         )
-        result = await pipeline.run({"patent_number": "US12345"}, context)
+        result = await pipeline.run({"industry": "electric-vehicles"}, context)
     """
 
     def __init__(self, name: str, stages: list[BaseAgent] | None = None):

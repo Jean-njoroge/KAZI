@@ -24,18 +24,18 @@ class ScoreTier:
 class ScoreLegend:
     """Configurable scoring system that maps numeric scores to actionable tiers.
 
-    Each product defines its own legend. Examples:
-        - CARTA: Abandon (0-40) → Evaluate (40-60) → Pursue (60-80) → Fast-track (80-100)
-        - RFI: Dismiss (0-40) → Review (40-60) → Apply (60-80) → Strong Apply (80-100)
+    Each domain defines its own legend. Examples:
+        - Market Intel: Noise (0-40) → Monitor (40-60) → Act (60-80) → Urgent (80-100)
+        - Content: Skip (0-40) → Maybe (40-60) → Write (60-80) → Priority (80-100)
 
     Example:
         legend = ScoreLegend(tiers=[
-            ScoreTier("Abandon", 0, 40, "abandon", "#ef4444"),
-            ScoreTier("Evaluate", 40, 60, "evaluate", "#f59e0b"),
-            ScoreTier("Pursue", 60, 80, "pursue", "#22c55e"),
-            ScoreTier("Fast-track", 80, 101, "fast-track", "#10b981"),
+            ScoreTier("Noise", 0, 40, "ignore", "#ef4444"),
+            ScoreTier("Monitor", 40, 60, "watch", "#f59e0b"),
+            ScoreTier("Act", 60, 80, "act", "#22c55e"),
+            ScoreTier("Urgent", 80, 101, "escalate", "#10b981"),
         ])
-        tier = legend.classify(75)  # → ScoreTier("Pursue", ...)
+        tier = legend.classify(75)  # → ScoreTier("Act", ...)
     """
 
     def __init__(self, tiers: list[ScoreTier]):

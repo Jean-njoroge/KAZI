@@ -26,7 +26,7 @@ class TopicScout(BaseScoutAgent):
     async def crawl(self, query: dict, context: AgentContext) -> list[dict]:
         # In production, this would call an API or scrape a source
         return [
-            {"title": "AI in Patent Law", "relevance": 85, "source": "arxiv"},
+            {"title": "AI in Competitive Intelligence", "relevance": 85, "source": "arxiv"},
             {"title": "Machine Learning Basics", "relevance": 40, "source": "blog"},
             {"title": "Agent Orchestration Patterns", "relevance": 92, "source": "paper"},
         ]

@@ -68,14 +68,14 @@ class Orchestrator:
 
     Example:
         orch = Orchestrator()
-        orch.register_pipeline(audit_pipeline)
-        orch.register_trigger(OnDemandTrigger(name="run-audit", pipeline_name="patent-audit"))
+        orch.register_pipeline(brief_pipeline)
+        orch.register_trigger(OnDemandTrigger(name="run-brief", pipeline_name="weekly-brief"))
 
         result = await orch.dispatch(Job(
             id="job-001",
-            pipeline_name="patent-audit",
+            pipeline_name="weekly-brief",
             trigger_type=TriggerType.ON_DEMAND,
-            payload={"patent_number": "US12345"}
+            payload={"industry": "electric-vehicles"}
         ))
     """
 

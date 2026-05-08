@@ -6,7 +6,7 @@ KAZI is a harness framework for professional services agents. Define your guides
 
 Define your agents, scoring rubrics, and report templates — KAZI handles orchestration, human review, and delivery.
 
-![KAZI platform architecture](images/kazi-os-architecture-hero.png)
+![KAZI platform architecture](docs/kazi-os-architecture-hero.png)
 
 ---
 
@@ -98,6 +98,8 @@ See [`examples/`](./examples/) for working code:
 - [Scoring System](./docs/scoring-system.md)
 - [Templates](./docs/templates.md)
 - [Plugins](./docs/plugins.md)
+- [Contributing](./CONTRIBUTING.md)
+- [Changelog](./CHANGELOG.md)
 
 ## License
 
