@@ -6,6 +6,8 @@ KAZI is a harness framework for professional services agents. Define your guides
 
 Define your agents, scoring rubrics, and report templates — KAZI handles orchestration, human review, and delivery.
 
+![KAZI platform architecture](images/kazi-os-architecture-hero.png)
+
 ---
 
 ## What is KAZI?
